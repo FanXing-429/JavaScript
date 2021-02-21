@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 原型对象的作用:原型对象中存在的属性和方法看做是Java中类的属性和方法
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        // 我们可以看做现在就有一个类Person，但是JS中没有类的概念，那么类型，类方法在哪放置？
+        // 我们可以将其保存在原型对象中，从某种意义上来说于Java中的Class对象类似
+        Person.prototype.sayName = function () {
+            return "我是" + this.name;
+        }
+
+        let p1 = new Person("李四", 19);
+        alert(p1.sayName());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
