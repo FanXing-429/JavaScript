@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+    <script>
+        // 构造函数
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        // 重写toString
+        0.prototype.toString = function () {
+            return  "Person{" +
+                "name='" + this.name + '\'' +
+                ", age=" + this.age +
+                '}';
+        }
+
+        // 获取和修改对象中的属性
+        let p = new 0("张三", 19);
+        p.name = "新张三";
+        p.age = 18;
+
+        document.write(p);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

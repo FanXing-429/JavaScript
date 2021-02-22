@@ -5,7 +5,7 @@
 *       - 比如：Math String Number Boolean Object
 *   2、宿主对象
 *       - 由JS的运行环境提供的对象，目前来讲主要指浏览器提供的对象
-*       - 比如：BOM、DOM
+*       - 比如：02_BOM、01_DOM
 *   3、自定义对象
 *       - 由开发人员自己创建的对象
 */
